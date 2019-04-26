@@ -1,0 +1,32 @@
+CONFIG_NAME: ''
+DATASET_NAME: 'maps'
+GPU_ID: '0'
+CUDA: True
+DATA_DIR: '../data/maps'
+NET_G: ''
+OUTPUT_DIR: 'maps_ne_output'
+IMSIZE: 256
+LOAD_SIZE: 280
+WORKERS: 4
+CLASS_NUM: 3
+NGF: 64
+NDF: 64
+Z_NUM: 8
+L1_LOSS: True
+DEBUG_FLAG: False
+G_TYPE: 'GEN_Bicycle'
+D_TYPE: 'DIS_Bicycle'
+TRAIN:
+    FLAG: True
+    BATCH_SIZE: 8 
+    MAX_EPOCH: 200
+    LR_DECAY_COUNT: 1.37e4
+    MAX_COUNT: 2.73e4
+    SNAPSHOT_INTERVAL: 5
+    SNAPSHOT_RANGE: 10
+    DISCRIMINATOR_LR: 0.0002
+    GENERATOR_LR: 0.0002
+    COEFF:
+        NE: 8.0
+        L1: 10.0
+NOISE_EXAG: True

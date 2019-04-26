@@ -1,0 +1,5 @@
+opencv-python
+scipy
+scikit-image
+h5py
+torchfile

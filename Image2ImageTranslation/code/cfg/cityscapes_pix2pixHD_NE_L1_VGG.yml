@@ -1,0 +1,34 @@
+CONFIG_NAME: ''
+DATASET_NAME: 'cityscapes'
+GPU_ID: '0'
+CUDA: True
+DATA_DIR: '../data/CityScapes'
+NET_G: ''
+OUTPUT_DIR: 'cityscapes_ne_output'
+IMSIZE: 512
+LOAD_SIZE: 540
+IM_RATIO: 2
+WORKERS: 2
+CLASS_NUM: 35
+NGF: 64
+NDF: 64
+Z_NUM: 64
+DEBUG_FLAG: False
+G_TYPE: 'GEN_HD'
+D_TYPE: 'DIS_HD'
+L1_LOSS: False
+VGG_LOSS: True
+FEAT_DIFF: False
+TRAIN:
+    FLAG: True
+    BATCH_SIZE: 3
+    MAX_EPOCH: 200
+    LR_DECAY_COUNT: 7.4e4
+    MAX_COUNT: 1.48e5
+    SNAPSHOT_INTERVAL: 5
+    DISCRIMINATOR_LR: 0.0002
+    GENERATOR_LR: 0.0002
+    COEFF:
+        NE: 10.0
+        L1: 0.0
+NOISE_EXAG: True

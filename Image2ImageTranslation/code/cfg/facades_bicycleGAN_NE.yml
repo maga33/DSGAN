@@ -1,0 +1,33 @@
+CONFIG_NAME: ''
+DATASET_NAME: 'facades'
+GPU_ID: '0'
+CUDA: True
+DATA_DIR: '../data/facades'
+NET_G: ''
+OUTPUT_DIR: 'facades_ne_output'
+IMSIZE: 256
+LOAD_SIZE: 280
+WORKERS: 4
+CLASS_NUM: 3
+NGF: 64
+NDF: 64
+Z_NUM: 8
+L1_LOSS: True
+DEBUG_FLAG: False
+G_TYPE: 'GEN_Bicycle'
+D_TYPE: 'DIS_Bicycle'
+TOTAL_SIZE: 400
+TRAIN:
+    FLAG: True
+    BATCH_SIZE: 8 
+    MAX_EPOCH: 200
+    LR_DECAY_COUNT: 5.0e3
+    MAX_COUNT: 9.98e3
+    SNAPSHOT_INTERVAL: 5
+    SNAPSHOT_RANGE: 10
+    DISCRIMINATOR_LR: 0.0002
+    GENERATOR_LR: 0.0002
+    COEFF:
+        NE: 8.0
+        L1: 10.0
+NOISE_EXAG: True
