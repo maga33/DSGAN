@@ -11,9 +11,9 @@ echo "Specified [$EXP_NAME]"
 # Get the download url according to the experiment name
 url_parse() {
     case $1 in
-        'cityscapes') URL="https://umich.box.com/shared/static/9jtuz3nhfeoed2us4s8p98lia9k5nsy6.gz";;
-        'facades') URL="https://umich.box.com/shared/static/yyjvlmw22tz2hmddiggydwidrgedh3o9.gz";;
-        'maps') URL="https://umich.box.com/shared/static/nliphdbk968p5cy65vy5gksgq872288n.gz";;
+        'cityscapes') URL="https://www.dropbox.com/s/bc2bg9736jppshn/cityscapes_ne_checkpoint.tar.gz";;
+        'facades') URL="https://www.dropbox.com/s/6lfiuuam4imbyv9/facades_ne_checkpoint.tar.gz";;
+        'maps') URL="https://www.dropbox.com/s/5e4fhhs4ten1b57/maps_ne_checkpoint.tar.gz";;
     esac
 }
 url_parse $EXP_NAME
